@@ -1,0 +1,114 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+}
+
+@font-face {
+  font-family: "CustomFont2";
+  src: url("assets/fonts/static/Inter-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-size: 11px;
+}
+
+@font-face {
+  font-family: "CFBold";
+  src: url("assets/fonts/static/Inter-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  background-color: black;
+}
+
+.container {
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px; /* Устанавливаем фиксированную ширину или можно использовать max-width */
+  margin: 100px 80px; /* Добавляем отступы, если нужно */
+  background-color: #262628ff;
+  border-radius: 5px;
+}
+
+.avatar img {
+  margin: 30px 0 0 10px;
+  border-radius: 50%;
+  width: 65px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 025);
+}
+
+.name {
+  color: #e5e0e0ff;
+  font-family: CustomFont;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+
+.from {
+  padding: 0;
+  margin: -20px 0 0 0;
+  border: 0;
+  color: #a5cb6bff;
+  font-family: CustomFont;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.post {
+  padding: 0;
+  margin: -20px 0 0 0;
+  border: 0;
+  font-family: CustomFont2;
+  font-size: 11px;
+  line-height: 1;
+  color: #e5e0e0ff;
+  font-weight: 100;
+}
+
+.list {
+  list-style: none;
+  padding: 0 20px;
+  color: #e5e0e0ff;
+  font-family: CFBold;
+  font-size: 10px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.list > li {
+  background-color: #444343ff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px 60px;
+  cursor: pointer;
+}
+
+.list > li:hover {
+  background-color: greenyellow;
+  color: black;
+}
+
+.list > li:active {
+  background-color: #3a3939ff;
+}
